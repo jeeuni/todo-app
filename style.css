@@ -1,0 +1,101 @@
+body {
+  background-color: lightblue;
+}
+h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+main {
+  width: 360px;
+  height: 720px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo-item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border-bottom: 2px solid black;
+}
+.toggle:checked + label {
+  text-decoration: line-through;
+}
+.toggle {
+  opacity: 0;
+  position: absolute;
+  top: -9000px;
+  left: -9000px;
+}
+.toggle + label {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.toggle + label:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 20%;
+}
+.toggle + label:after {
+  color: red;
+  content: "\2713";
+  width: 12px;
+  height: 12px;
+
+  position: absolute;
+  display: flex;
+  top: -6px;
+  left: 3px;
+  scale: 0.1;
+}
+.toggle:checked + label::after {
+  scale: 1.3;
+  transition: background-color 0.2s linear, scale 0.1s linear;
+}
+
+.toggle:checked + label > p {
+  opacity: 25%;
+  transition: opacity 0.2s linear;
+}
+
+.todo-item p:hover {
+  scale: 1.05;
+  transition: scale 0.1s linear;
+}
+
+.toggle + label > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 20px;
+}
+.memo {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-top: 50px;
+  margin-right: 74%;
+}
+
+.memo-box {
+  width: 90%;
+  height: 80%;
+  white-space: pre-wrap;
+}
+
+textarea {
+  width: 100%;
+  height: 90%;
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
+}
