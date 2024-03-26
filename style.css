@@ -2,10 +2,10 @@ body {
   background-color: lightblue;
 }
 h1 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bolder;
-  margin-bottom: 50px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 main {
   width: 360px;
@@ -15,6 +15,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.todo-input-section {
+  padding-bottom: 20px;
+}
+.todo-input-button {
+  background-color: lightblue;
+  border-radius: 3px;
 }
 .todo-item {
   width: 100%;

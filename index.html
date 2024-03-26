@@ -3,67 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
-    <script src="demo.js"></script>
-    <title>Todo List</title>
+    <title>TODO APP</title>
   </head>
   <body>
-    <main>
-      <h1>CHECK LIST</h1>
+    <!-- 주석 -->
+    <main class="todo-app">
+      <h1>TODO APP</h1>
       <section class="todo-input-section">
-        <input type="text" class="todo-input" />
+        <input class="todo-input" type="text" />
         <button class="todo-input-button">등록</button>
       </section>
-      <div class="todo-item">
-        <input type="checkbox" class="toggle" id="check1" />
-        <label for="check1">
-          <p>여행 카드 발급하기</p>
-        </label>
-      </div>
-      <div class="todo-item">
-        <input type="checkbox" class="toggle" id="check2" />
-        <label for="check2">
-          <p>홍콩 맛집 찾아보기</p>
-        </label>
-      </div>
-      <div class="todo-item">
-        <input type="checkbox" class="toggle" id="check3" />
-        <label for="check3">
-          <p>마카오 맛집 찾아보기</p>
-        </label>
-      </div>
-      <div class="todo-item">
-        <input type="checkbox" class="toggle" id="check4" />
-        <label for="check4">
-          <p>이심 구매하기</p>
-        </label>
-      </div>
-      <div class="todo-item">
-        <input type="checkbox" class="toggle" id="check5" />
-        <label for="check5">
-          <p>옷 구매하기</p>
-        </label>
-      </div>
-      <div class="todo-item">
-        <input type="checkbox" class="toggle" id="check6" />
-        <label for="check6">
-          <p>유명한 관광명소 찾아보기</p>
-        </label>
-      </div>
-      <div class="todo-item">
-        <input type="checkbox" class="toggle" id="check7" />
-        <label for="check7">
-          <p>홍콩, 마카오 날씨 알아보기</p>
-        </label>
-      </div>
-      <div class="memo">
-        <p>memoෆ</p>
-      </div>
-      <div class="memo-box">
-        <textarea wrap="hard"> </textarea>
-      </div>
+      <section class="todo-list-section">
+        <ul class="ul">
+          <li class="todo-item">
+            <label>
+              <input type="checkbox" />
+              <span>디퓨져 주문하기</span>
+            </label>
+          </li>
+          <!-- <li class="todo-item">
+            <label>
+              <input type="checkbox" />
+              <span>옷장 주문하기 </span>
+            </label>
+          </li>
+          <li class="todo-item">
+            <label>
+              <input type="checkbox" />
+              <span>화장대 주문하기</span>
+            </label>
+          </li>
+          <li class="todo-item">
+            <label>
+              <input type="checkbox" />
+              <span>휴대폰 필름 갈기</span>
+            </label>
+          </li> -->
+        </ul>
+      </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
